@@ -1,0 +1,71 @@
+body {
+    background-color: #A3BCD8;
+}
+
+svg{
+    background: none;
+    width: 1100px;
+    height: 610px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    width: 600px;
+    height: 100px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Abril Fatface', cursive;
+    margin-top: -400px;
+    margin-left: 270px;
+    color: #263A4F;
+}
+
+#one {
+    width: 440px;
+    height: 100px;
+    margin-left: 330px;
+    margin-top: 250px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #263A4F;
+}
+
+#head1 {
+    margin-top: 80px;
+    font-size: 35px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #263A4F;
+    margin-left: 300px;
+}
+
+.svgBox {
+    margin-top: 50px;
+}
+
+.buttonbox {
+    margin-left: 50px;
+    margin-top: -150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
