@@ -1,47 +1,120 @@
 <!DOCTYPE html>
-
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet">
-<script src="queue.min.js"></script>
-<script src="d3.v4.2.6.min.js"></script>
-<script src="./jquery-3.2.1.js"></script>
-<script src="./bootstrap.js"></script>
-
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>East Boston</title>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>The Margins-Article</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+ <link rel="stylesheet" href="css/EastBoston_styles.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+    <script src="queue.min.js"></script>
+    <script src="d3.v4.2.6.min.js"></script>
+    <script src="./jquery-3.2.1.js"></script>
+
 </head>
 <body>
+    
+<!-- Hamburger menu
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <nav role="navigation" class="EastBoston_nav" >
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <ul id="menu">
+        <a href="#" ><li style="font-size:4rem">Article 1</li></a>
+        <a href="#"><li style="font-size:4rem">Article 2</li></a>
+        <a href="#"><li style="font-size:4rem">Article 3</li></a>
+        <a href="#"><li style="font-size:4rem">Article 4</li></a>
+        <a href="#"><li style="font-size:4rem">Article 5</li></a>
+        <a href="#"><li style="font-size:4rem">Article 6</li></a>
 
-    <div class="svgBox2">
-      <svg width="100%" height="100%" id="svg2"></svg>
-    </div>
+    </ul>
+  </div>
+</nav>
 
-    <div class="title">Living Population Change
-        <br>in East Boston</div>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="column EastBoston">
+        <h1 class="EastBoston_head">Living Population Change<br>in East Boston</h1>
 
-    <div class="text" id="one">This is a story about population change in East Boston. East Boston has long provided a
-        foothold for the latest immigrants with Irish, Russian Jews and later, Italians as a beginning. This web will
-        let you know how East Boston population change.</div>
+          <p>This is about different country population change in East Boston. East Boston has long provided a
+              foothold for the latest immigrants with Irish, Russian Jews and later, Italians as a beginning. This web will
+              let you know how East Boston population change.</p>
+          <h5 class="EastBoston_byline">By Ziyi Zhao</h5>
 
-    <div class="head" id="head1">East Boston Population between 2000 - 2010.</div>
+          
+          <h2 class="EastBoston_head"></h2>
 
-    <div class="svgBox">
-        <svg width="100%" height="100%" id="svg1"></svg>
-    </div>
+        <div class="svgBox">
+            <div class="svgBox1">
+                <svg width="100%" height="100%" id="svg1"></svg>
+            </div>
 
-    <div class="buttonbox">
-        <button type="button" onclick="buttonClicked_1()" id="1">1836</button>
-        <button type="button" onclick="buttonClicked_2()" id="2">1904</button>
-        <button type="button" onclick="buttonClicked_3()" id="3">2000</button>
-        <button type="button" onclick="buttonClicked_4()" id="4">2010</button>
-    </div>
+            <div class="svgBox2">
+                <svg width="100%" height="100%" id="svg2"></svg>
+            </div>
 
+            <div class="svgBox3">
+                <img src="eastbostonpopulation.svg">
+            </div>
+        </div>
+
+        <div class="buttonbox">
+            <button type="button" onclick="buttonClicked_1()" id="1">1910</button>
+            <button type="button" onclick="buttonClicked_2()" id="2">1920</button>
+            <button type="button" onclick="buttonClicked_3()" id="3">1940</button>
+            <button type="button" onclick="buttonClicked_4()" id="4">1950</button>
+            <button type="button" onclick="buttonClicked_5()" id="5">1960</button>
+            <button type="button" onclick="buttonClicked_6()" id="6">1970</button>
+            <button type="button" onclick="buttonClicked_7()" id="7">2000</button>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+    
+<h6 class="EastBoston_footer"><span class="EastBoston_footer">Visualizing Eastie</span> is a project of the <a href="https://www.northeastern.edu/visualization/">Information Design and Visualization program</a> at Northeastern University. © 2018</h6>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 
-<script src="./index.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/newindex.js"></script>
 
 </html>
