@@ -52,6 +52,7 @@ queue()
             .attr("d", path)
             .attr("class", "feature")
             .attr('fill', "white");
+
         svg2.selectAll("path")
             .data(streetData.features)
             .enter()
@@ -61,7 +62,6 @@ queue()
             .attr("stroke", "lightgray")
             .attr("stroke-width", 1)
             .attr("fill", "none");
-
 
     });
 

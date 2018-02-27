@@ -1,3 +1,34 @@
+body{
+    background-color: #E0FFFF;
+}
+
+.first{
+    width: 1118px;
+    background-color: white;
+}
+
+#imageFirst{
+    width:900px;
+    height:600px;
+    margin-left: 100px;
+}
+
+#imageTwo{
+    width: 300px;
+    height: 300px;
+}
+
+#imageThird{
+    width: 200px;
+    height: 200px;
+    margin-left: 100px;
+    margin-top: -30px;
+}
+
+#imageFour{
+    width: 400px;
+    height: 400px;
+}
 
 #svg1{
     background: none;
@@ -54,6 +85,7 @@
     width: 800px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 100px;
 }
 
 
